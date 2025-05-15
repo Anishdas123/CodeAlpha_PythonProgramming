@@ -17,7 +17,6 @@ def hangman():
 
     # Game loop
     while attempts_left > 0 and correct_letters:
-        # Display current word progress
         display_word = [letter if letter in guessed_letters else '_' for letter in word_to_guess]
         print('Word:', ' '.join(display_word))
         print(f"Guessed letters: {' '.join(sorted(guessed_letters))}")
